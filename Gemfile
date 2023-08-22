@@ -73,3 +73,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "cocoon", "~> 1.2"
+gem "foreman", github: "ddollar/foreman"
+gem "simple_form"
