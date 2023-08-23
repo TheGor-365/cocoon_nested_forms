@@ -1,12 +1,21 @@
-<div id="<%= dom_id project %>">
-  <p>
-    <strong>Name:</strong>
-    <%= project.name %>
-  </p>
+<div id="<%= dom_id project %>" class="border p-5 my-5">
+  <div class="row">
+    <div class="col-3">
+      <strong class="text-muted">
+        Name
+      </strong>
+      <p>
+        <%= project.name %>
+      </p>
+    </div>
 
-  <p>
-    <strong>Description:</strong>
-    <%= project.description %>
-  </p>
-
+    <div class="col-9">
+      <strong class="text-muted">
+        Description
+      </strong>
+      <p>
+        <%= project.description %>
+      </p>
+    </div>
+  </div>
 </div>
