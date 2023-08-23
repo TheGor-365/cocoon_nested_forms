@@ -1,4 +1,7 @@
-<div id="<%= dom_id project %>" class="border p-5 my-5">
+<div id="<%= dom_id project %>" class="border p-5 my-5 bg-light">
+  <h4 class="text-center">
+    Project
+  </h4>
   <div class="row">
     <div class="col-3">
       <strong class="text-muted">
@@ -18,4 +21,12 @@
       </p>
     </div>
   </div>
+
+  <h4 class="mt-5 text-center">
+    Project Tasks
+  </h4>
+
+  <% project.tasks.each do |task| %>
+    <%= render partial: 'tasks/project_task', locals: { task: task } %>
+  <% end %>
 </div>
